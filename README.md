@@ -116,14 +116,16 @@ digits.forEach(d => console.log(d));
 ---
  
 **5. Important Array functions.**
-add element at end,at start.
-remove elements from start, from end.
-create new array having elements from 0 to 2.
-find elements included.
-find index of element.
-ascending and descending sorting.
-use map, filter, reduce, find, forEach with index and element.
- 
+<ul>
+<li>add element at end,at start.</li>
+<li>remove elements from start, from end.</li>
+<li>create new array having elements from 0 to 2.</li>
+<li>find elements included.</li>
+<li>find index of element.</li>
+<li>ascending and descending sorting.</li>
+<li>use map, filter, reduce, find, forEach with index and element.</li>
+</ul>
+
 ```js
 let products = ["Laptop", "Mouse", "Keyboard", "Monitor"];
  
