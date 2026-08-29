@@ -319,23 +319,20 @@ function isAnagram(str1, str2) {
     return format(str1) === format(str2);
 }
 
-function findArmstrong(num) {
-    const digits = String(num).split("").map(Number);
+function findArmstrongNumber(num) {
+    const digits = String(num).split("");
     const power = digits.length;
-    let sum = digits.reduce((acc, digit) => acc + Math.pow(digit, power), 0);
-    return sum === num;
+
+    // return digits.reduce((sum, digit) => sum + Math.pow(Number(digit), power), 0);
+    return digits.reduce((sum, digit) => sum + Math.pow(+digit, power), 0);
 }
 
 
-let text = "madam";
-console.log(isPalindrome(text));
+console.log(isPalindrome("madam"));
 
-let word1 = "listen";
-let word2 = "silent";
-console.log(isAnagram(word1, word2));
+console.log(isAnagram("listen", "silent"));
 
-let number = 153;
-console.log(findArmstrong(number));
+console.log(findArmstrongNumber(153));
 ```
   
 ---
