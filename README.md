@@ -1,4 +1,4 @@
-# JavaScript Coding Questions
+# JAVASCRIPT-CODING-ROUND
  
 ---
  
