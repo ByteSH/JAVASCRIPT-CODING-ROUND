@@ -191,14 +191,11 @@ console.log(
 **8. Find missing number from a sequential array**
  
 ```js
-let arr = [1, 2, 3, 5, 6, 7, 9, 10];
-let position = 0;
- 
-for (let i = Math.min(...arr); i < Math.max(...arr); i++) {
-    if (arr[position] === i) {
-        position++;
-    } else {
-        console.log(i);
+let arr = [3, 5, 6, 7, 9, 10];
+
+for (let i = 0; i < arr.length - 1; i++) {
+    for (let missing = arr[i] + 1; missing < arr[i + 1]; missing++) {
+        console.log(missing);
     }
 }
 ```
